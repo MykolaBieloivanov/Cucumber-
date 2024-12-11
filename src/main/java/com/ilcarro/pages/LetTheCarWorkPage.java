@@ -80,12 +80,15 @@ public class LetTheCarWorkPage extends BasePage {
         return this;
     }
 
-    @FindBy(tagName = "h1")
+
+    //    @FindBy(xpath = "//h1[@class = 'title']")
+    //@FindBy(xpath = "//*[@class='title']")
+    @FindBy(xpath = "//*[@class='title' and text()='Car added']")
+
     WebElement carAdded;
 
-
     public LetTheCarWorkPage kaktus(String text) {
-
+        pause(1000);
         assert carAdded.getText().contains(text);
         return this;
     }

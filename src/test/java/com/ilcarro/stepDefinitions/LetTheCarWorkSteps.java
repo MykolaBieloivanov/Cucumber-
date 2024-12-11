@@ -23,7 +23,7 @@ public class LetTheCarWorkSteps {
 
     @And("User fill in car details field")
     public void fill_in_car_details_field() {
-        new LetTheCarWorkPage(driver).fillInfo("Opel", "Kadet", "1999", "Diesel", "2", "A", "Nikov73g7", "222");
+        new LetTheCarWorkPage(driver).fillInfo("Opel", "Kadet", "1999", "Diesel", "2", "A", "Nikddd8dsovg7", "222");
 
     }
 
